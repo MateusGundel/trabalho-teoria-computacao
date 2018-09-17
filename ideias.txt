@@ -1,2 +1,4 @@
 //Jorge aqui suas ideias
 //A nao ser que seja ruim tlg
+
+Para conseguir montar a lógica do programa deve-se analisar não só a linha atual, mas a anterior e a próxima(caso existam) para se ter contexto do que está acontecendo
