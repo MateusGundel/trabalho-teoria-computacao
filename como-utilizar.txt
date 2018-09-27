@@ -1,0 +1,23 @@
+Para começar a utilizar é necessário carregar o ambiente de desenvolvimento python, que pode ser carregado com o comando "source python-config/bin/activate" PS: Sempre inicialize o ambiente, assim não será necessário instalar arquivos na própria máquina, e sim na virtuan env.
+
+O diretório MateusGundel_EduardoMeurer_ThalesMuller é onde irão ficar os arquivos da aplicação.
+
+O arquivo Manage.py é a base para rodar a aplicação.
+
+O django cria sozinho o banco de dados, então é necessário na aplicação
+
+Comando úteis 
+	-inicia o projeto django
+	$django-admin startproject [nome do projeto]
+	
+	-inicia um novo módulo no projeto
+	$python manage.py startapp [nome do módulo]
+	
+	-roda a aplicação
+	$python manage.py runserver
+
+	-registra no banco de dados
+	python manage.py migrate
+	
+	-cria um superusuario para acessar o admin(não vai ser usado na aplicação)
+	python manage.py createsuperuser
