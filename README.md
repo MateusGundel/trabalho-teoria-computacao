@@ -3,4 +3,6 @@ Trabalho de Teoria da Computação - Unisc 2018/2
 - Thales Eduardo Müller
 - Eduardo Brum Meurer
 
+Algumas instruções estão disponíveis no arquivo util.txt
+
 
