@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho Teorica da Computação</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/programa.css' %}">
+</head>
+<body>
+<div>
+
+
+    <form method="post">
+        <div class="container-fluid">
+            {% csrf_token%}
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="title">Trabalho Teoria da Computação</h1>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="basic-label">Programa 1</label>
+                    <textarea class="form-control textArea" id="entrada1" name="entrada1"></textarea>
+                </div>
+                <div class="col-md-4">
+                    <label class="basic-label">Programa 2</label>
+                    <textarea class="form-control textArea" id="entrada2"></textarea>
+                </div>
+                <div class="col-md-4">
+                    <label class="basic-label" rows="10" cols="30">Saida</label>
+                    <textarea class="form-control textArea" id="resultado"></textarea>
+                </div>
+            </div>
+
+            <div class="col-md-12 ml-md-auto ">
+                <button class="btn-danger " type="submit">teste</button>
+            </div>
+
+        </div>
+    </form>
+
+
+</div>
+</body>
+</html>

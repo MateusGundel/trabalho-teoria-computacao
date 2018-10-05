@@ -1,0 +1,29 @@
+h1 {
+    color: #FCA205;
+}
+
+.textArea {
+    border: 1px solid #ba68c8;
+    alignment: center;
+    cols: 33;
+    rows: 10;
+}
+
+.masoq {
+    color: red;
+}
+
+.basic-label {
+    text-align: center;
+}
+
+.title {
+    color: #ba68c8;
+    text-align: center;
+}
+
+.botao {
+    align-content: center;
+    alignment: center;
+    align-items: center;
+}
