@@ -1,4 +1,4 @@
 //Jorge aqui suas ideias
 //A nao ser que seja ruim tlg
-
+//"Não acho que quem ganhar ou quem perder, nem quem ganhar nem perder, vai ganhar ou perder. Vai todo mundo perder." ~ROUSSELFF, dilma
 Para conseguir montar a lógica do programa deve-se analisar não só a linha atual, mas a anterior e a próxima(caso existam) para se ter contexto do que está acontecendo
