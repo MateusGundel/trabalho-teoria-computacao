@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render, redirect
+from code.processamento import validacoes
 
 
 # Create your views here.
@@ -7,6 +8,8 @@ from django.shortcuts import render, redirect
 def programa(request):
     if request.POST:
         tipo = request.POST['entrada1'] or None
+        print(tipo)
+        print(validacoes.to_words(tipo))
     else:
         tipo = ''
 
