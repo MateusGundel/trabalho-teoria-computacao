@@ -1,4 +1,3 @@
-class validacoes():
-    # def valida_entrada():
-    def to_words(programa):
-        return programa.split(" ")
+# def valida_entrada():
+def to_words(programa):
+    return programa.split(" ")
