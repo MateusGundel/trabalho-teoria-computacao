@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="mateusGundel-ThalesMuller-EduardoMeurer.jnlp">
+  <information>
+    <title>mateusGundel-ThalesMuller-EduardoMeurer</title>
+    <vendor>mateus</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="mateusGundel-ThalesMuller-EduardoMeurer.jar" size="100559" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="mateusGundel-ThalesMuller-EduardoMeurer" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="app.App"  name="mateusGundel-ThalesMuller-EduardoMeurer" />
+  <update check="always"/>
+</jnlp>
