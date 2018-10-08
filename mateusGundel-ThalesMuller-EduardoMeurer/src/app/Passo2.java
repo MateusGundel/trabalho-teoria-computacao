@@ -11,14 +11,15 @@ import model.Rotulo;
  */
 public class Passo2 {
 
-    public LinkedList<InstRotuladaComp> lista; // Lista original dos rótulos.
+    public LinkedList<InstRotuladaComp> lista;
     public static LinkedList<InstRotuladaComp> rotulosFora = new LinkedList<>();
     public static LinkedList<InstRotuladaComp> rotulosDentro = new LinkedList<>();
     public LinkedList<ConjuntoCadeiaFinita> listaCadeiaFinita = new LinkedList<>();
 
     public void gerar() {
 
-        int posParada = 0; // guarda a posição da parada quando a encontramos.
+        //armazena a posicao de parada
+        int posParada = 0;
 
         // Primeiro conjunto da cadeia finita.
         ConjuntoCadeiaFinita cadeiaFinita = new ConjuntoCadeiaFinita("&", "A0");
@@ -26,7 +27,7 @@ public class Passo2 {
 
         int contRotulo = 1; // contador da qtd de rótulos percorridos.
 
-        // Percorre a lista de tras para frente, marcando se encontrou a parada
+        // Percorre a lista de tras para frente, procurando a parada
         // e gera a lista de cadeia de conjuntos finitos.
         for (int i = lista.size() - 1; i >= 0; i--) {
 
@@ -77,16 +78,17 @@ public class Passo2 {
     public boolean verificaSeExiste(InstRotuladaComp instrucao, LinkedList<InstRotuladaComp> lista) {
         for (int i = 0; i < lista.size(); i++) {
             InstRotuladaComp instrucaoLista = lista.get(i);
-            if (instrucao.getOpV() == instrucaoLista.getOpV()
-                    && instrucao.getIdOpV() == instrucaoLista.getIdOpV()
-                    && instrucao.getOpF() == instrucaoLista.getOpF()
-                    && instrucao.getIdOpF() == instrucaoLista.getIdOpF()) {
+            if (instrucao.getOpV().equals(instrucaoLista.getOpV())
+                    && instrucao.getIdOpV().equals(instrucaoLista.getIdOpV())
+                    && instrucao.getOpF().equals(instrucaoLista.getOpF())
+                    && instrucao.getIdOpF().equals(instrucaoLista.getIdOpF())) {
                 return true;
             }
         }
         return false;
     }
 
+    //Gera a saida em uma string
     public static String comoString(LinkedList<ConjuntoCadeiaFinita> lista) {
         StringBuilder texto = new StringBuilder();
 

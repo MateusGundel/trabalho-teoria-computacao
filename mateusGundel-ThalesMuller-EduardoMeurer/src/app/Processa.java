@@ -1,7 +1,5 @@
 package app;
 
-//import static app.Passo1.contadorRotuloComposto;
-//import static app.Passo1.indiceInstrucaoEmTeste;
 import controller.AppController;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -87,7 +85,7 @@ public class Processa {
             Platform.runLater(() -> {
                 controller.resultadoPasso1Programa2.setText(p2Passo1.comoString(lista2));
 
-                // Tratamento para exibir o último elemento como ciclo quando tiver.
+                // exibir o último elemento como ciclo quando tiver.
                 if (p2Passo1.temCiclo) {
                     controller.resultadoPasso1Programa2.appendText("w:(ciclo,w),(ciclo,w)");
                 }

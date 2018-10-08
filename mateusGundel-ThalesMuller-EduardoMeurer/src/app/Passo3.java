@@ -14,10 +14,13 @@ public class Passo3 {
     public static LinkedList<InstRotuladaComp> rotulosDentro;
 
     public Passo3(LinkedList<InstRotuladaComp> rotulosFora, LinkedList<InstRotuladaComp> rotulosDentro) {
-        this.rotulosFora = rotulosFora;
-        this.rotulosDentro = rotulosDentro;
+        Passo3.rotulosFora = rotulosFora;
+        Passo3.rotulosDentro = rotulosDentro;
     }
 
+    /**
+     * Gera os dados para o passo 3
+     */
     public void gerar() {
 
         for (int i = 0; i < rotulosDentro.size(); i++) {
@@ -28,13 +31,13 @@ public class Passo3 {
 
                 InstRotuladaComp instrucaoFora = rotulosFora.get(j);
 
-                if (instrucaoDentro.getOpV() == instrucaoFora.getOpV()) {
+                if (instrucaoDentro.getOpV().equals(instrucaoFora.getOpV())) {
                     instrucaoDentro.setRotuloV(Rotulo.CICLO);
                     instrucaoDentro.setIdOpV("w");
                     instrucaoDentro.setOpV("ciclo");
                     rotulosDentro.set(i, instrucaoDentro);
                 }
-                if (instrucaoDentro.getOpF() == instrucaoFora.getOpF()) {
+                if (instrucaoDentro.getOpF().equals(instrucaoFora.getOpF())) {
                     instrucaoDentro.setRotuloF(Rotulo.CICLO);
                     instrucaoDentro.setIdOpF("w");
                     instrucaoDentro.setOpF("ciclo");

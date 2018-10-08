@@ -1,8 +1,6 @@
 package app;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import static javafx.application.Platform.exit;
 import model.InstRotuladaComp;
 
 /**
@@ -15,8 +13,8 @@ class Passo4 {
     private static LinkedList<InstRotuladaComp> irPrograma2;
 
     public Passo4(LinkedList<InstRotuladaComp> irPrograma1, LinkedList<InstRotuladaComp> irPrograma2) {
-        this.irPrograma1 = irPrograma1;
-        this.irPrograma2 = irPrograma2;
+        Passo4.irPrograma1 = irPrograma1;
+        Passo4.irPrograma2 = irPrograma2;
 
     }
 
@@ -36,6 +34,12 @@ class Passo4 {
         Passo4.irPrograma2 = irPrograma2;
     }
 
+    /**
+     * Verifica os dois programas e retorna a string com a saída final do
+     * programa
+     *
+     * @return
+     */
     public String gerar() {
         int limitelista1 = 0;
         int limitelista2 = 0;
@@ -48,15 +52,11 @@ class Passo4 {
         for (int i = 0; i <= limitelista1 - 1; i++) {
 
             for (j = i + 1; j <= limitelista1 - 1; j++) {
-
-                // while( j  != limitelista1-1 ){
                 if ((irPrograma1.get(i).getOpF().equals(irPrograma1.get(j).getOpF())
                         && irPrograma1.get(i).getIdOpF().equals(irPrograma1.get(j).getIdOpF()))
                         && (irPrograma1.get(i).getOpV().equals(irPrograma1.get(j).getOpV())
                         && irPrograma1.get(i).getIdOpV().equals(irPrograma1.get(j).getIdOpV()))) {
-
                     irPrograma1.remove(j);
-
                     limitelista1--;
                     j--;
                 }
@@ -71,9 +71,7 @@ class Passo4 {
                         && irPrograma2.get(i).getIdOpF().equals(irPrograma2.get(j).getIdOpF()))
                         && (irPrograma2.get(i).getOpV().equals(irPrograma2.get(j).getOpV())
                         && irPrograma2.get(i).getIdOpV().equals(irPrograma2.get(j).getIdOpV()))) {
-
                     irPrograma2.remove(j);
-
                     limitelista2--;
                     j--;
                 }
